@@ -1,0 +1,108 @@
+<style>
+  .Subscribe-button {
+    background-color:rgb(163, 4, 4);
+    color:white;
+    border: none;
+    height: 35px;
+    width: 105px;
+    border-radius: 10px;  
+    cursor: pointer ; 
+    margin-right: 8px;
+    transition: opacity 0.50s;
+  }
+
+.Subscribe-button:hover{
+  opacity:0.7;
+ 
+}
+.Subscribe-button:active{
+  background-color:salmon;
+  opacity:o.3;
+}
+  .join-button{
+    background-color: white;
+    border-color: rgb(41, 118, 211); 
+    border-style: solid;
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;  
+    cursor: pointer ;
+    border-width: 1px;
+    color:rgb(41, 118, 211); 
+    transition: background colour 0.15s,color 0.15s
+    
+  }
+  .join-button:hover{
+    background-color: rgb(41, 118, 211);
+    color: white;
+  }  
+  .join-button:active{
+    opacity: 0.5;
+  }
+
+  .tweet-button{
+    background-color:rgb(2,158,255);
+    color:white;
+    border: none;
+    height: 35px;
+    width: 105px;
+    border-radius: 17px;  
+    cursor: pointer ;
+    font-weight:bold;
+    font-size: 15px;
+    margin-left: 8px;
+    transition: box-shadow 0.15s;
+
+  }
+  .tweet-button:hover{
+    box-shadow:5px 5px 10px rgba(0, 0, 0, 0.3);
+  }
+  .request-button{
+    background-color:rgb(48, 49, 49);
+    color:white;
+    border: none;
+    height: 35px;
+    width: 105px;
+    border-radius: 1px;  
+    cursor: pointer ;
+    font-size: 15px;
+    margin-left: 8px;
+  }
+  .request-button:hover{
+  opacity:0.7;
+ 
+}
+.request-button:active{
+  background-color:salmon;
+  opacity:o.3;
+}
+.amazon-link {
+    color: blue; /* Default link color */
+    text-decoration: none; /* Remove underline */
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    padding: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+  }
+
+  .amazon-link:hover {
+    color: blue; /* Text color on hover */
+    text-decoration: underline; /* Add underline on hover */
+  }
+</style>
+<button class = "Subscribe-button">
+  SUBSCRIBE
+</button>
+<button class = "jOin-button" >
+  JOIN
+</button>
+<button class = "tweet-button">
+  Tweet
+</button>
+<button class = "request-button">
+  Request now
+</button>
+<a href="https://www.amazon.com/" class="amazon-link">
+  Back to Amazon
+</a>
