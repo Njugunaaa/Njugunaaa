@@ -1,0 +1,61 @@
+def show_balance(balance):
+    print(f"Your balance is ${balance:.2f} ")
+def deposit(balance):
+    amount=  float(input("Enter an amount you would like to deposit: $"))
+    if amount < 0:
+        print(f"{amount} is not a valid amount")
+        return 0
+    else:
+        return amount
+def withdraw(balance):
+    amount = float(input("Enter amount to be withdrawn: $"))
+    if amount> balance:
+        print("Insufficient funds in your account")
+        return 0
+    elif amount<0:
+        print(f"{amount} is an invalid amount, amount must be greater than 0")
+        return 0
+    else:
+        return amount
+
+def main():
+    balance=0
+    is_running=True
+    print("***********************")
+    print("Halisi Banking Services")
+    print("***********************")
+    User_name = input("Greetings Customer, Kindly please enter your Halisi Bank Username: ")
+    print("$*$*$*$*$*$*$*$*$*$*$*$*$*$*")
+    print(f"Welcome {User_name} what would you like to do today! ")
+    print("$*$*$*$*$*$*$*$*$*$*$*$*$*$*")
+
+    while is_running:
+        print("***********************")
+        print("Halisi Banking Services")
+        print("***********************")
+        print("1. Show balance")
+        print("2. Deposit")
+        print("3. Withdraw")
+        print("4. Exit")
+        print("***********************")
+
+        choice= input("Enter a number (1-4): ")
+
+        if choice == "1":
+            show_balance(balance)
+        elif choice =="2":
+            balance+=deposit(balance)
+        elif choice =="3":
+            balance-=withdraw(balance)
+        elif choice=="4":
+            is_running=False
+        else:
+            print("***********************")
+            print(f"{choice} is not a valid choice")
+            print("***********************")
+    print("$*$*$*$*$*$*$*$*$*$*$*$*$*$*")
+    print(f"Thankyou {User_name} for visiting Halisi Banking Servics. Have a Lovely day ahead! ")
+    print("$*$*$*$*$*$*$*$*$*$*$*$*$*$*")
+
+if __name__ == '__main__':
+    main()
