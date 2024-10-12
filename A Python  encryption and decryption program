@@ -1,0 +1,68 @@
+#Encryption program
+import random
+import string
+
+
+def generate_key():
+    chars  = string.punctuation + string.digits +string.ascii_letters + " "
+    chars=list(chars)
+    key=chars.copy()
+    random.shuffle(key)
+    return chars, key
+
+def encrypt(plain_text, chars,key):
+    cipher_text = ""
+    for letter in plain_text:
+        index = chars.index(letter)
+        cipher_text += key[index]
+    return cipher_text
+
+def decrypt(cipher_text, chars, key):
+    plain_text = ""
+    for letter in cipher_text:
+        index = key.index(letter)
+        plain_text+=chars[index]
+    return plain_text
+def validate_input(text, valid_chars):
+    for letter in text:
+        if letter not in valid_chars:
+            print(f"Invalid character {letter} found.")
+            return False
+    return True
+def get_valid_input(prompt, valid_chars):
+    while True:
+        user_input= input(prompt)
+        if validate_input(user_input, valid_chars):
+            return user_input
+        else:
+            print("Pease enter a valid message with valid characters")
+
+
+
+def main():
+    while True:
+        chars, key = generate_key()
+        print(f"chars: {chars}")
+        print(f"key: {key}")
+        plain_text = get_valid_input("Enter a message you would like encrypted: ", chars)
+
+        if validate_input(plain_text, chars):
+            cipher_text= encrypt(plain_text,chars,key)
+            print(f"The encrypted code is {cipher_text}")
+
+        cipher_text = get_valid_input("Enter a message you would like decrypted: ", key)
+        if validate_input(cipher_text,key):
+            decrypted_text= decrypt(cipher_text, chars, key)
+            print(f"The decrypted original message is {decrypted_text}")
+
+        continue_response = input("Do you want to continue (yes/no)? ").strip().lower()
+        if continue_response == "no":
+            print("Thank you for using the encryption program. Goodbye!")
+            break
+        elif continue_response != "yes":
+            print("Invalid input. Please respond with 'yes' or 'no'.")
+
+
+
+if __name__ =="__main__":
+    main()
