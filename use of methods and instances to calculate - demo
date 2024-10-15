@@ -1,0 +1,36 @@
+class Student:
+    count = 0
+    total_gpa=0
+    def __init__(self, name, gpa):
+        self.name=name
+        self.gpa=gpa
+        Student.count += 1
+        Student.total_gpa+=gpa
+
+#this is an instance method
+    def get_info(self):
+        return f"{self.name}{self.gpa}"
+
+
+    @classmethod
+    def get_count(cls):
+        return f"Total number of students: {cls.count}"
+
+    @classmethod
+    def get_total_gpa(cls):
+        return f"The total gpa is {cls.total_gpa}"
+
+    @classmethod
+    def get_mean(cls):
+        if cls.count>0:
+            mean_gpa = cls.total_gpa / cls.count
+            return f"The mean GPA is {mean_gpa}"
+        else:
+            return "No students were available to calculate the mean GPA"
+
+student1=Student("Spongebob", 20)
+student2=Student("Patrick", 10)
+student3=Student("Sandy",90)
+print(Student.get_count())
+print(Student.get_total_gpa())
+print(Student.get_mean())
