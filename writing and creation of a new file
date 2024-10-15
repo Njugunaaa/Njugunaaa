@@ -1,0 +1,17 @@
+import json
+import csv
+employees=[["name","age", "Job"],
+          ["spongebob",30,"cook"],
+          ["Eugene", 22, "Manager"],
+          ["Sandy", 26, "Scientist"]]
+file_path="C:\\Users\\HP\\OneDrive\\Desktop\\output.csv"
+
+try:
+    with open(file_path, "w")as file:
+        writer=csv.writer(file)
+        for row in employees:
+            writer.writerow(row)
+        print(f"csv file '{file_path}' has been created")
+
+except FileExistsError:
+    print("The file name you entered already exists") 
