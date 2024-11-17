@@ -1,45 +1,41 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
     text-align: center;
-    margin-top: 50px;
-}
-
-.container {
-    background: #fff;
     padding: 20px;
-    border-radius: 8px;
-    max-width: 400px;
-    margin: auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-image: url('beach.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white; 
+    
 }
 
-input {
+h1 {
+    color: #333;
+}
+
+form input {
     padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 80%;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    margin: 10px;
+    width: 200px;
 }
 
-button {
-    padding: 10px 15px;
-    background-color: #007BFF;
-    color: white;
+form button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #c02121;
     border: none;
-    border-radius: 4px;
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #0056b3;
+form button:hover {
+    background-color: #45a049;
 }
 
-.weather-info {
+h2 {
     margin-top: 20px;
 }
 
-.error {
-    color: red;
+img {
+    margin-top: 10px;
 }
