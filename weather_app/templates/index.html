@@ -4,29 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
-    <link rel="stylesheet" href="/static/app.css">
+    <link rel="stylesheet" type="text/css" href="static/style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Weather App</h1>
-        <form method="POST">
-            <input type="text" name="city" placeholder="Enter city name" required>
-            <button type="submit">Get Weather</button>
-        </form>
-
-        {% if error_message %}
-            <p class="error">{{ error_message }}</p>
-        {% endif %}
-
-        {% if weather_data %}
-            <div class="weather-info">
-                <h2>Weather in {{ weather_data.city }}</h2>
-                <p>Temperature: {{ weather_data.temperature }}°C</p>
-                <p>Description: {{ weather_data.description }}</p>
-                <p>Humidity: {{ weather_data.humidity }}%</p>
-                <p>Wind Speed: {{ weather_data.wind_speed }} m/s</p>
-            </div>
-        {% endif %}
-    </div>
+    <h1>Weather App</h1>
+    <form method="POST" action="/">
+        <input type="text" name="city" placeholder="Enter city name" required>
+        <button type="submit">Get Weather</button>
+    </form>
+    {% if weather_data %}
+        <div class="weather-info">
+            <h2>Weather in {{ weather_data.city }}:</h2>
+            <p>Temperature: {{ weather_data.temperature }}°C</p>
+            <p>Description: {{ weather_data.description }}</p>
+            <p>Humidity: {{ weather_data.humidity }}%</p>
+            <p>Wind Speed: {{ weather_data.wind_speed }} m/s</p>
+            <img src="http://openweathermap.org/img/wn/{{ weather_data.icon }}.png" alt="Weather icon">
+        </div>
+    {% elif error_message %}
+        <p class="error">{{ error_message }}</p>
+    {% endif %}
 </body>
 </html>
+``
