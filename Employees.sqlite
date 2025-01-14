@@ -1,0 +1,41 @@
+-- Create the Employees table
+CREATE TABLE Employees (
+    ID INT PRIMARY KEY AUTO_INCREMENT,
+    Name VARCHAR(50) NOT NULL,
+    Email VARCHAR(100) NOT NULL UNIQUE,
+    GitHub VARCHAR(50) NOT NULL UNIQUE,
+    JobDescription VARCHAR(100) NOT NULL
+);
+
+-- Insert 30 employees into the table
+INSERT INTO Employees (Name, Email, GitHub, JobDescription) VALUES
+('Mwangi Kamau', 'mwangi.kamau@example.com', 'mwangikamau', 'Software Developer'),
+('Achieng Otieno', 'achieng.otieno@example.com', 'achiengotieno', 'IT Support Specialist'),
+('Nduta Karanja', 'nduta.karanja@example.com', 'ndutakaranja', 'Network Administrator'),
+('Musa Wanjala', 'musa.wanjala@example.com', 'musawanjala', 'Database Administrator'),
+('Wafula Simiyu', 'wafula.simiyu@example.com', 'wafulasimiyu', 'System Analyst'),
+('Nyambura Njuguna', 'nyambura.njuguna@example.com', 'nyamburanjutuna', 'Cybersecurity Analyst'),
+('Omollo Awino', 'omollo.awino@example.com', 'omolloawino', 'DevOps Engineer'),
+('Wanjiku Mutua', 'wanjiku.mutua@example.com', 'wanjikumutua', 'Web Developer'),
+('Kimani Njenga', 'kimani.njenga@example.com', 'kimaninjenga', 'Mobile App Developer'),
+('Kipkorir Chebet', 'kipkorir.chebet@example.com', 'kipkorirchebet', 'Data Analyst'),
+('Makena Mwiti', 'makena.mwiti@example.com', 'makenamwiti', 'Project Manager'),
+('Otieno Ochieng', 'otieno.ochieng@example.com', 'otienoochieng', 'Cloud Engineer'),
+('Wambui Kariuki', 'wambui.kariuki@example.com', 'wambuikariuki', 'Technical Writer'),
+('Njeri Mbugua', 'njeri.mbugua@example.com', 'njerimbugua', 'Software Tester'),
+('Mwende Kyalo', 'mwende.kyalo@example.com', 'mwendekyalo', 'UI/UX Designer'),
+('Kibaki Muthoni', 'kibaki.muthoni@example.com', 'kibakimuthoni', 'Solutions Architect'),
+('Juma Hassan', 'juma.hassan@example.com', 'jumahassan', 'IT Helpdesk Technician'),
+('Ndungu Mwangi', 'ndungu.mwangi@example.com', 'ndungumwangi', 'IT Manager'),
+('Kiprono Langat', 'kiprono.langat@example.com', 'kipronolangat', 'Full Stack Developer'),
+('Amina Noor', 'amina.noor@example.com', 'aminanoor', 'IT Consultant'),
+('Waithera Gachanja', 'waithera.gachanja@example.com', 'waitheragachanja', 'Data Scientist'),
+('Otieno Adhiambo', 'otieno.adhiambo@example.com', 'otienoadhiambo', 'Systems Engineer'),
+('Cherono Kipchirchir', 'cherono.kipchirchir@example.com', 'cheronokipchirchir', 'Business Analyst'),
+('Wanjiru Karanja', 'wanjiru.karanja@example.com', 'wanjirukaranja', 'IT Trainer'),
+('Kiplagat Bett', 'kiplagat.bett@example.com', 'kiplagatbett', 'Network Engineer'),
+('Ngina Mwangi', 'ngina.mwangi@example.com', 'nginamwangi', 'System Administrator'),
+('Kamau Mburu', 'kamau.mburu@example.com', 'kamaumburu', 'Machine Learning Engineer'),
+('Mutiso Ndambuki', 'mutiso.ndambuki@example.com', 'mutisondambuki', 'AI Specialist'),
+('Muriithi Kariuki', 'muriithi.kariuki@example.com', 'muriithikariuki', 'Frontend Developer'),
+('Omondi Oluoch', 'omondi.oluoch@example.com', 'omondioluoch', 'Backend Developer');
