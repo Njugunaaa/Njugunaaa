@@ -1,3 +1,4 @@
+<div align="center">
 # 💫 About Me:
 👨‍💻 Software engineer who believes everything is acquirable and possible.  <br>⚡ I build clean, useful web apps — fast and with purpose.  <br>🌐 Big on React, Flask, SQLAlchemy, and Tailwind.  <br>🧠 Learning AI and Web3 because the future is already here.  <br>💬 I like breaking down complex things and helping others grow.  <br>😄 Terminal wins still make my day.<br>😄 Always happy and learning.<br>
 
@@ -16,7 +17,7 @@
 ![](https://github-profile-trophy.vercel.app/?username=Njugunaaa&theme=shadow_red&no-frame=false&no-bg=false&margin-w=4)
 
 ### ✍️ Random Dev Quote
-![]([https://quotes-github-readme.vercel.app/api?type=vetical&theme=tokyonight](https://quotes-github-readme.vercel.app/api?type=vetical&theme=tokyonight))
+![](https://quotes-github-readme.vercel.app/api?type=vetical&theme=tokyonight)
 
 ### 🔝 Top Contributed Repo
 ![](https://github-contributor-stats.vercel.app/api?username=Njugunaaa&limit=5&theme=dark&combine_all_yearly_contributions=true)
