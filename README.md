@@ -1,5 +1,6 @@
 <div align="center">
-# 💫 About Me:
+### 💫 About Me:
+  
 👨‍💻 Software engineer who believes everything is acquirable and possible.  <br>⚡ I build clean, useful web apps — fast and with purpose.  <br>🌐 Big on React, Flask, SQLAlchemy, and Tailwind.  <br>🧠 Learning AI and Web3 because the future is already here.  <br>💬 I like breaking down complex things and helping others grow.  <br>😄 Terminal wins still make my day.<br>😄 Always happy and learning.<br>
 
 
