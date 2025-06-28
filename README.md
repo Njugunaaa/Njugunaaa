@@ -1,7 +1,7 @@
 <div align="center">
 ### 💫 About Me:
   
-👨‍💻 Believing everything is possible.  <br>⚡ Building scalable solutions.  <br>🌐 Lover of Tech.  <br>🧠 Learning AI and Web3. <br>💬 I like breaking down complex things and helping others grow.<br>😄 Always happy and learning.<br>
+👨‍💻 Believing everything is possible.  <br>⚡ Building scalable solutions.  <br>🌐 Lover of Tech.  <br>🧠 Learning AI and Web3. <br>😄 Always happy and learning.<br>
 
 
 ## 🌐 Socials:
