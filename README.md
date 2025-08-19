@@ -2,7 +2,7 @@
 ### 💫 About Me:
   
 👨‍💻 Believing everything is possible.  <br>⚡ Building scalable solutions.  <br>🌐 Lover of Tech.  <br>🧠 Learning AI and Web3. <br>😄 Always happy and learning.<br>
-https://myportfolio-rho-three-11.vercel.app/
+https://njugunaportfolio.vercel.app
 
 ## 🌐 Socials:
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/https://www.linkedin.com/in/joshua-gichuhi-775395302/) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:joshuangich2@gmail.com) 
