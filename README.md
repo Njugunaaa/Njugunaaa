@@ -1,6 +1,6 @@
 <div align="center">
 ##  About Me💫:
-##  NJUGUNAA 
+###  NJUGUNAA 
 👨‍💻 Believing everything is possible.  <br>⚡ Building scalable solutions.  <br>🌐 Lover of Tech.  <br>🧠 Learning AI and Web3. <br>😄 Always happy and learning.<br>
 https://njugunaportfolio.vercel.app
 
